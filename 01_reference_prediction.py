@@ -25,14 +25,13 @@ namelabels = STRAINS
 from config import ATCC_GROUPINGS
 
 # Making predictions on the reference dataset
-# In this notebook, we'll demonstrate using a trained and fine-tuned CNN to make predictions on an independent test
-# set composed of reference isolates. This code illustrates the procedure used to generate the results shown in Figure 2.
+
 
 ## Loading data
 # The first step is to load the test dataset (3000 spectra).
 t0 = time.time()
-X = 'E:\\zhoubo\\data\\nc30\\X_test.npy'
-y = 'E:\\zhoubo\\data\\nc30\\y_test.npy'
+X = './nc30/X_test.npy'
+y = './nc30/y_test.npy'
 X = np.load(X)
 y = np.load(y)
 
